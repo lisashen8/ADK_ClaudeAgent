@@ -1,0 +1,23 @@
+# Python virtual environments and bytecode caches. These contain local paths,
+# such as your home directory, and are rebuilt from requirements.txt.
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Local configuration and credentials. Never commit keys or tokens. On Cloud
+# Run, the app authenticates with its service account, so it needs no key files.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*credentials*.json
+*service-account*.json
+*-key.json
+.streamlit/secrets.toml
+
+# OS and editor files
+.DS_Store
+.idea/
+.vscode/

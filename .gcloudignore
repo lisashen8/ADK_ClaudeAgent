@@ -1,0 +1,12 @@
+# Files excluded from `gcloud run deploy --source .` uploads.
+# Cloud Build installs dependencies from requirements.txt, so the local
+# virtualenv and Python bytecode caches are not needed in the container.
+.gcloudignore
+.git
+.gitignore
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+# Also skip everything that Git ignores, such as local .env and key files.
+#!include:.gitignore
